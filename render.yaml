@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bookhub-backend
+    env: docker
+    plan: free
+    branch: main
+    region: oregon
+    dockerfilePath: Dockerfile
+    buildCommand: docker build -t bookhub-backend .
